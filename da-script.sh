@@ -20,7 +20,7 @@ pacman -S --noconfirm \
     waybar foot rofi wofi swaybg swaylock grim slurp wl-clipboard \
     brightnessctl playerctl pamixer
 
-echo ">>> Installing all developer tools
+echo ">>> Installing all developer tools"
 pacman -S --noconfirm python python-pip python-virtualenv r rust go jdk-openjdk gradle maven nodejs npm cmake make gcc clang gdb arduino-cli qt6-base qt6-declarative qt6-svg octave
 
 echo ">>> Installing yay (AUR helper)..."
