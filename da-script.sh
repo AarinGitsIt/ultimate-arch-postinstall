@@ -22,8 +22,8 @@ pacman -S --noconfirm \
 
 echo ">>> Installing programming languages & development tools..."
 pacman -S --noconfirm \
-    python python-pip python-virtualenv \   # Python (with venv support)
-    r \                                     # R (standalone)
+    python python-pip python-virtualenv # Python (with venv support)
+pacman -S --noconfirm   r \                                     # R (standalone)
     rust \                                  # Rust (cargo included)
     go \                                    # Go (with go mod)
     jdk-openjdk gradle maven \              # Java
