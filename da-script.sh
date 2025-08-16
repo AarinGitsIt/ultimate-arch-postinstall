@@ -20,18 +20,6 @@ pacman -S --noconfirm \
     waybar foot rofi wofi swaybg swaylock grim slurp wl-clipboard \
     brightnessctl playerctl pamixer
 
-echo ">>> Installing programming languages & development tools..."
-pacman -S --noconfirm \
-    python python-pip python-virtualenv # Python (with venv support)
-pacman -S --noconfirm   r \                                     # R (standalone)
-    rust \                                  # Rust (cargo included)
-    go \                                    # Go (with go mod)
-    jdk-openjdk gradle maven \              # Java
-    nodejs npm \                            # JS/TS
-    cmake make gcc clang gdb \              # C/C++
-    arduino-cli \                           # Arduino
-    qt6-base qt6-declarative qt6-svg \      # QML/Qt
-
 echo ">>> Installing yay (AUR helper)..."
 cd /tmp
 git clone https://aur.archlinux.org/yay-bin.git
