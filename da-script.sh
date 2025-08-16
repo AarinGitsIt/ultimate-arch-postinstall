@@ -31,7 +31,6 @@ pacman -S --noconfirm \
     cmake make gcc clang gdb \              # C/C++
     arduino-cli \                           # Arduino
     qt6-base qt6-declarative qt6-svg \      # QML/Qt
-    texlive-most                            # LaTeX
 
 echo ">>> Installing yay (AUR helper)..."
 cd /tmp
