@@ -26,17 +26,14 @@ pacman -S --noconfirm python python-pip python-virtualenv r rust go jdk-openjdk 
 echo ">>> Installing yay (AUR helper)..."
 cd /tmp
 git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si --noconfirm
 
-echo ">>> Installing AUR packages..."
-yay -S --noconfirm \
-    zen-browser-bin discord visual-studio-code-bin \
-    neovim
+echo ">>> Installing Flatpak and apps..."
+sudo pacman -S flatpak
+flatpak install flathub app.zen_browser.zen com.brave.Browser md.obsidian.Obsidian com.discordapp.Discord
 
 echo ">>> Setting up Neovim config..."
-rm -rf ~/.config/nvim
-git clone https://github.com/aarinjames/ultimate-nvim-config ~/.config/nvim
+sudo pacman -S neovim
+git clone https://github.com/AarinGitsIt/ultimate-nvim-config ~/.config/nvim
 
 echo ">>> Updating xdg-user-dirs..."
 xdg-user-dirs-update
